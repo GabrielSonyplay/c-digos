@@ -1,0 +1,56 @@
+/*criando as flexbox*/
+section{
+    display: flex;
+    
+}
+
+/*design dos blocos*/
+.bloco{
+    font-size: 20px;
+    background-color: #050f60;
+    color: white;
+    border-radius: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    min-width: 325px;
+    min-height: 225px;
+    max-width: 325px;
+    max-height: 225px;
+    padding: 10px;
+    box-shadow:5px 5px 15px #050f60;
+}
+
+/*design do botão para ver receita*/
+.bloco a{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+}
+
+/*facilitar o click do usuario*/
+.bloco a:hover{
+    opacity: 0.9;
+
+}
+
+/*design da caixa de anuncio*/
+.anuncio{
+    font-size: 20px;
+    background-color: lightgray;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left:10px;
+    margin-right: 10px;
+    min-width: 325px;
+    min-height: 175px;
+    max-width: 325px;
+    padding: 10px;
+    display: flex;
+}

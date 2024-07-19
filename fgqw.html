@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Focus</title>
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Define duas colunas, com a coluna da esquerda sendo o dobro da coluna da direita */
+  grid-template-rows: auto 1fr auto; /* Define três linhas, a primeira e a terceira ajustam-se ao conteúdo e a do meio ocupa o espaço restante */
+  grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
+  gap: 10px; /* Espaçamento entre os itens do grid */
+}
+
+.header {
+  grid-area: header;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.main {
+  grid-area: main;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+      <div class="header">Cabeçalho</div>
+      <div class="main">Conteúdo Principal</div>
+      <div class="sidebar">Barra Lateral</div>
+      <div class="footer">Rodapé</div>
+    </div>
+  </body>
+  </html>
+  

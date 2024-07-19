@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(253, 162, 176);
+    position: sticky;
+    box-shadow: 30px 0px 30px rgb(207, 172, 177);
+    top: 0;
+    padding: 1rem;
+    z-index: 33;
+    font-family: "Josefin Sans", sans-serif;
+}
+.geral1{
+    max-width: 1300px;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.geral1 nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 30px;
+    font-size: 20px;
+    
+}
+
+.geral1 nav ul a{
+    padding: 30px;
+    color:black;
+    text-decoration: none;
+    
+}
+.geral1 nav ul a:hover, .imagem2:hover{
+    background-color: rgba(255, 192, 203, 0.356);
+}
+
+.imagem1{
+    height: 150px;
+    width: 150px;
+}
+
+.imagem2{
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+
+}
+
+.imagem3{
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+    
+}
+
+.texto{
+    padding-bottom:5px;
+    border-bottom: black solid 3px;
+}
+
+input[type="text"] {
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    top: 10px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+button[type="submit"] {
+    position: relative;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    top: 12px;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.checkbox-container{
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    left: 10px;
+}
+/*header*/
+
+
+.tabela{
+    background-color: rgb(253, 162, 176);
+    height: 100vh;
+    position: absolute;
+    display: none;
+    width: 307px;
+    top: 150px;
+    box-shadow: 22px 22px 222px 1px rgb(253, 162, 176);;
+  
+}
+
+.page{
+    background-color: rgba(253, 162, 176, 0.719);
+}
+
+.content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+    
+}
+
+.cols-3{
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.paragrafos{
+    font-family: "Josefin Sans", sans-serif;;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.cols a{
+    justify-self: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.botao {
+    position: relative;
+    align-items: center;
+    height: 150px;
+    align-items: center;
+    
+}
+
+.botao:hover .tabela{
+    display:block;
+}
+
+/*main*/
+
+footer{
+    background-color: rgb(253, 162, 176);
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 33;
+    font-family: "Josefin Sans", sans-serif;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px){
+    
+    nav{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        bottom: 100px;
+    }
+    .geral1 ul{
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      background-color: rgb(253, 162, 176);
+    }
+
+    .geral1 nav ul li{
+        
+        color:black;
+        text-decoration: none;
+        width: 100%;
+    }
+    
+    .geral1 nav ul li a{
+        
+        color:black;
+        border: solid 1px ; 
+        padding: 13px 0;
+        text-align: center;
+        border: none;
+        display: block;
+    }
+    
+    .imagem3{
+        display: block;
+    }
+}

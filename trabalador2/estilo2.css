@@ -1,0 +1,73 @@
+/* definindo as caracteristicas gerais do header como a cor das letras, do background a criação da flexbox e o espaçamento*/
+.tabela {
+    color: white;
+    background-color: #050f60;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* cria outra flexbox e remove as caracteristicas de lista*/
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+/*mexe no direcionamento das listas*/
+li{
+    position: relative;
+}
+
+/* define as caracterias visuais dos links */
+.botao{
+    text-decoration: none;
+    background-color: green;
+    padding: 10px 15px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    min-width: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+/*facilitar o click do usuario*/
+.botao:hover{
+    opacity: 0.9;
+}
+
+/* define as caracterias visuais do dropdown geral*/
+.dropbtn{
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 100px;
+    background-color: white;
+    left: 5px;
+}
+
+/* define as caracterias visuais dos links do dropdown*/
+.dropbtn a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+/* efeito que deixa o dropdown invisivel*/
+.dropdown:hover .dropbtn{
+    display:block;
+}
+
+/* efeito de click do usuario no dropdown*/
+.dropbtn a:hover {
+    background-color: green;
+}
+
+
