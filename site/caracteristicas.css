@@ -29,12 +29,14 @@ header{
     align-items: center;
     margin: 30px;
     font-size: 20px;
+    font-weight: bold;
     
 }
 
 .geral1 nav ul a{
     padding: 30px;
     color:black;
+    font-size: 25px;
     text-decoration: none;
     
 }
@@ -43,8 +45,8 @@ header{
 }
 
 .imagem1{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
 }
 
 .imagem2{
@@ -66,63 +68,80 @@ header{
     border-bottom: black solid 3px;
 }
 
-input[type="text"] {
-    position: relative;
-    width: 200px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    font-family: 'Josefin Sans', sans-serif;
-    top: 10px;
+.cols a:hover{
+    opacity: 0.4;
 }
 
-input[type="text"]:focus {
-    outline: none;
+.imagem4{
+    width: 300px;
+    height: 400px;
 }
 
-input[type="checkbox"] {
-  height: 20px;
-  width: 20px;
+#tabela, #tabela1, #tabela2, #tabela3, #tabela4 {
+    padding-right: 100px;
+    font-family: "Josefin Sans", sans-serif;
+    justify-content: space-between;
 }
 
-button[type="submit"] {
-    position: relative;
-    background-color: #4CAF50;
+h2 {
+    padding: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left: 90px ;
+}
+
+
+.filtro {
+    justify-content: center;
+    display: flex;
+    background-color: black;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    top: 12px;
+}
+
+
+#teste, #teste1, #teste2, #teste3, #teste4 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
     
 }
 
-button[type="submit"]:hover {
-    background-color: #45a049;
+#tabela a, #tabela1 a, #tabela2 a, #tabela3 a, #tabela4 a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 16px;
+    width: 250px;
+    text-align: center;
 }
 
-.checkbox-container{
-    position: relative;
-    top: 10px;
-    font-size: 20px;
-    left: 10px;
+#tabela:hover #teste,
+#tabela1:hover #teste1,
+#tabela2:hover #teste2,
+#tabela3:hover #teste3,
+#tabela4:hover #teste4 {
+    display: flex;
+    flex-direction: column;
 }
+
+
+#tabela:hover h2,
+#tabela1:hover h2,
+#tabela2:hover h2,
+#tabela3:hover h2,
+#tabela4:hover h2 {
+    text-decoration: underline;
+}
+
+#teste a:hover, #teste1 a:hover, #teste2 a:hover, #teste3 a:hover, #teste4 a:hover {
+    background-color: rgba(51, 45, 45, 0.767);
+}
+
+
 /*header*/
-
-
-.tabela{
-    background-color: rgb(253, 162, 176);
-    height: 100vh;
-    position: absolute;
-    display: none;
-    width: 307px;
-    top: 150px;
-    box-shadow: 22px 22px 222px 1px rgb(253, 162, 176);;
-  
-}
 
 .page{
     background-color: rgba(253, 162, 176, 0.719);
@@ -136,18 +155,18 @@ button[type="submit"]:hover {
 .cols{
     display: grid;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 4rem 1rem;
     
 }
 
 .cols-3{
     grid-template-columns: repeat(3,1fr);
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .paragrafos{
-    font-family: "Josefin Sans", sans-serif;;
+    font-family: "Josefin Sans", sans-serif;
     text-align: center;
     position: relative;
     top: 30px;
@@ -159,7 +178,27 @@ button[type="submit"]:hover {
     color: black;
 }
 
+#imagem5{
+    width: 800;
+    height: 600px;
+}
 
+#sobre{
+    background-color: pink;
+    height: 100vh;
+}
+.template {
+    text-align: center;
+    position: relative;
+    top: 75px;
+}
+
+.template p{
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 23px;
+   width: 900px;
+   margin: 0 auto;
+}
 
 .botao {
     position: relative;
